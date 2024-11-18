@@ -90,7 +90,7 @@ def main():
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.markdown("""
+        st.markdown(""" 
         ### Weather Prediction Dashboard
         Use the sliders on the right to input current weather parameters 
         and predict expected rainfall.
