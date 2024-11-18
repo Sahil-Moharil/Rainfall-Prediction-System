@@ -3,6 +3,13 @@ import joblib
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Page configuration should be the first command
+st.set_page_config(
+    page_title='Rainfall Prediction', 
+    page_icon='🌧️', 
+    layout='wide'
+)
+
 # Custom CSS
 def local_css():
     st.markdown("""
@@ -69,13 +76,6 @@ def load_model():
 def main():
     # Apply custom CSS
     local_css()
-    
-    # Page configuration
-    st.set_page_config(
-        page_title='Rainfall Prediction', 
-        page_icon='🌧️', 
-        layout='wide'
-    )
     
     # Main container
     st.markdown('<div class="main-container">', unsafe_allow_html=True)
